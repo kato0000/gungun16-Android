@@ -6,32 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    private Button[] button;
+    private Button[] buttons;
+    private Mission[] missions;
+    private TextView[] textViews;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        button = new Button[5];
-//        button[0] = (Button) findViewById(R.id.button);
-//        button[1] = (Button) findViewById(R.id.button2);
-//        button[2] = (Button) findViewById(R.id.button3);
-//        button[3] = (Button) findViewById(R.id.button4);
-//        button[4] = (Button) findViewById(R.id.button5);
-//
-//        for(int i = 0; i > 5; i++) {
-//            button[i].setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    onActiveClick(view);
-//                }
-//            });
-//        }
+        missions = new Mission[4];
+        missions[0] = new Mission("はみがきをする");
+        missions[1] = new Mission("手をあらう");
+        missions[2] = new Mission("かたづける");
+        missions[3] = new Mission("べんきょうをする");
 
         Button mButton1 = (Button) findViewById(R.id.mButton1);
+        mButton1.setText(missions[0].name);
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +34,7 @@ public class MainActivity extends Activity {
         });
 
         Button mButton2 = (Button) findViewById(R.id.mButton2);
+        mButton2.setText(missions[1].name);
         mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,6 +43,7 @@ public class MainActivity extends Activity {
         });
 
         Button mButton3 = (Button) findViewById(R.id.mButton3);
+        mButton3.setText(missions[2].name);
         mButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,6 +52,7 @@ public class MainActivity extends Activity {
         });
 
         Button mButton4 = (Button) findViewById(R.id.mButton4);
+        mButton4.setText(missions[3].name);
         mButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

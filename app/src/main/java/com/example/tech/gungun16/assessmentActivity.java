@@ -13,7 +13,7 @@ public class assessmentActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment);
 
-        Button button = (Button) findViewById(R.id.button6);
+        Button button = (Button) findViewById(R.id.buttonA);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +24,7 @@ public class assessmentActivity extends Activity {
 
     public void onActiveClick(View view){
         switch (view.getId()){
-            case R.id.button6:
+            case R.id.buttonA:
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
