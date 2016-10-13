@@ -29,7 +29,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ステータス"
+        android:text="組み立て"
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_alignBottom="@+id/textView"
@@ -53,19 +53,12 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextView
-                android:layout_width="650dp"
-                android:layout_height="wrap_content"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="はみがきをする"
-                android:id="@+id/textView3"
-                android:textSize="40dp"
-                android:singleLine="false" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="できた"
-                android:id="@+id/button2"
+                android:id="@+id/mButton1"
+                android:background="#597bf6"
                 android:textSize="40dp" />
         </LinearLayout>
 
@@ -74,19 +67,13 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextView
-                android:layout_width="650dp"
-                android:layout_height="wrap_content"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="手をあらう"
-                android:id="@+id/textView4"
-                android:textSize="40dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="できた"
-                android:id="@+id/button3"
-                android:textSize="40dp" />
+                android:id="@+id/mButton2"
+                android:textSize="40dp"
+                android:background="#f25656" />
         </LinearLayout>
 
         <LinearLayout
@@ -94,18 +81,12 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextView
-                android:layout_width="650dp"
-                android:layout_height="wrap_content"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="かたづける"
-                android:id="@+id/textView5"
-                android:textSize="40dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="できた"
-                android:id="@+id/button4"
+                android:id="@+id/mButton3"
+                android:background="#64f15f"
                 android:textSize="40dp" />
         </LinearLayout>
 
@@ -114,18 +95,12 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextView
-                android:layout_width="650dp"
-                android:layout_height="wrap_content"
-                android:text="べんきょうをする"
-                android:id="@+id/textView6"
-                android:textSize="40dp" />
-
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="できた"
-                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="べんきょうをする"
+                android:id="@+id/mButton4"
+                android:background="#f4ee5c"
                 android:textSize="40dp" />
         </LinearLayout>
 

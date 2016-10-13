@@ -31,32 +31,32 @@ public class MainActivity extends Activity {
 //            });
 //        }
 
-        Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button mButton1 = (Button) findViewById(R.id.mButton1);
+        mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onActiveClick(view);
             }
         });
 
-        Button button3 = (Button) findViewById(R.id.button3);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button mButton2 = (Button) findViewById(R.id.mButton2);
+        mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onActiveClick(view);
             }
         });
 
-        Button button4 = (Button) findViewById(R.id.button4);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button mButton3 = (Button) findViewById(R.id.mButton3);
+        mButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onActiveClick(view);
             }
         });
 
-        Button button5 = (Button) findViewById(R.id.button5);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button mButton4 = (Button) findViewById(R.id.mButton4);
+        mButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onActiveClick(view);
@@ -66,19 +66,19 @@ public class MainActivity extends Activity {
 
     public void onActiveClick(View view){
         switch (view.getId()){
-            case R.id.button2:
+            case R.id.mButton1:
                 Intent intent = new Intent(this, assessmentActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.button3:
+            case R.id.mButton2:
                 Intent intent2 = new Intent(this, assessmentActivity.class);
                 startActivity(intent2);
                 break;
-            case R.id.button4:
+            case R.id.mButton3:
                 Intent intent3 = new Intent(this, assessmentActivity.class);
                 startActivity(intent3);
                 break;
-            case R.id.button5:
+            case R.id.mButton4:
                 Intent intent4 = new Intent(this, assessmentActivity.class);
                 startActivity(intent4);
                 break;
