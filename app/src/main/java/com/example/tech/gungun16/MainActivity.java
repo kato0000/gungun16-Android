@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -64,19 +63,19 @@ public class MainActivity extends Activity {
     public void onActiveClick(View view){
         switch (view.getId()){
             case R.id.mButton1:
-                Intent intent = new Intent(this, assessmentActivity.class);
+                Intent intent = new Intent(this, AssessmentActivity.class);
                 startActivity(intent);
                 break;
             case R.id.mButton2:
-                Intent intent2 = new Intent(this, assessmentActivity.class);
+                Intent intent2 = new Intent(this, AssessmentActivity.class);
                 startActivity(intent2);
                 break;
             case R.id.mButton3:
-                Intent intent3 = new Intent(this, assessmentActivity.class);
+                Intent intent3 = new Intent(this, AssessmentActivity.class);
                 startActivity(intent3);
                 break;
             case R.id.mButton4:
-                Intent intent4 = new Intent(this, assessmentActivity.class);
+                Intent intent4 = new Intent(this, AssessmentActivity.class);
                 startActivity(intent4);
                 break;
         }
